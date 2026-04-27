@@ -71,6 +71,24 @@ function initContactForm() {
     return;
   }
 
+  const params = new URLSearchParams(window.location.search);
+  const successBox = document.querySelector("[data-form-success]");
+  const errorBox = document.querySelector("[data-form-error]");
+  const formTime = form.elements.namedItem("form_time");
+
+  if (params.get("sent") === "1" && successBox) {
+    successBox.hidden = false;
+    form.hidden = true;
+  }
+
+  if (params.get("error") === "1" && errorBox) {
+    errorBox.hidden = false;
+  }
+
+  if (formTime) {
+    formTime.value = String(Math.floor(Date.now() / 1000));
+  }
+
   const lang = document.documentElement.lang;
   const fields = {
     name: form.elements.namedItem("name"),

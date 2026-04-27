@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 
-Disallow: /hispano-polaco/es/send.php
-Disallow: /hispano-polaco/pl/send.php
+Disallow: /api/contact
 
 Sitemap: https://teatrodeidiomas.pl/hispano-polaco/sitemap.xml

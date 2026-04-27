@@ -1,0 +1,21 @@
+{
+  "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/es/contact.php",
+      "destination": "/es/contact.html"
+    },
+    {
+      "source": "/pl/kontakt.php",
+      "destination": "/pl/kontakt.html"
+    },
+    {
+      "source": "/es/send.php",
+      "destination": "/api/contact?lang=es"
+    },
+    {
+      "source": "/pl/send.php",
+      "destination": "/api/contact?lang=pl"
+    }
+  ]
+}
