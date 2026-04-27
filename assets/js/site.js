@@ -1,10 +1,48 @@
 document.addEventListener("DOMContentLoaded", () => {
+  initGlobalChrome();
   initMenu();
   initFaq();
   initContactForm();
   initScrollExperience();
   initCookieBanner();
 });
+
+function initGlobalChrome() {
+  const header = document.querySelector(".site-header");
+
+  if (!header || document.querySelector(".site-topbar")) {
+    return;
+  }
+
+  const lang = document.documentElement.lang === "es" ? "es" : "pl";
+  const copy = lang === "es"
+    ? {
+        note: "escuela online de polaco para hispanohablantes",
+        contactLabel: "Contacto",
+        mailLabel: "E-mail"
+      }
+    : {
+        note: "internetowa szkoła polskiego dla osób hiszpańskojęzycznych",
+        contactLabel: "Kontakt",
+        mailLabel: "E-mail"
+      };
+
+  const topbar = document.createElement("div");
+  topbar.className = "site-topbar";
+  topbar.innerHTML = `
+    <div class="container site-topbar__inner">
+      <div class="site-topbar__left">
+        <span>${copy.note}</span>
+      </div>
+      <div class="site-topbar__right">
+        <a href="mailto:teatrocontactwarsaw@gmail.com">${copy.mailLabel}: teatrocontactwarsaw@gmail.com</a>
+        <a href="tel:+48576471021">${copy.contactLabel}: +48 576 471 021</a>
+      </div>
+    </div>
+  `;
+
+  header.parentNode.insertBefore(topbar, header);
+}
 
 function initMenu() {
   const toggle = document.getElementById("nav-toggle");
