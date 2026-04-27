@@ -796,6 +796,7 @@ main {
   background: linear-gradient(90deg, var(--primary), rgba(167, 57, 45, 0.12));
 }
 
+.card::before,
 .story-card::before {
   display: none;
 }
