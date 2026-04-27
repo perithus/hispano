@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initMenu();
   initFaq();
   initContactForm();
+  initScrollExperience();
+  initCookieBanner();
 });
 
 function initMenu() {
@@ -175,4 +177,155 @@ function initContactForm() {
       event.preventDefault();
     }
   });
+}
+
+function initScrollExperience() {
+  initScrollProgress();
+  initRevealAnimations();
+  initHeaderState();
+  initSmoothHashLinks();
+}
+
+function initScrollProgress() {
+  const bar = document.createElement("div");
+  bar.className = "scroll-progress";
+  document.body.appendChild(bar);
+
+  const update = () => {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
+    bar.style.transform = `scaleX(${Math.min(Math.max(progress, 0), 1)})`;
+  };
+
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+}
+
+function initRevealAnimations() {
+  const selectors = [
+    ".hub-card",
+    ".hero-copy",
+    ".hero-card",
+    ".section-head",
+    ".card",
+    ".story-card",
+    ".feature-panel",
+    ".faq-item",
+    ".contact-card",
+    ".contact-form",
+    ".policy-shell"
+  ];
+
+  const elements = document.querySelectorAll(selectors.join(", "));
+
+  elements.forEach((element, index) => {
+    element.classList.add("reveal");
+    element.style.transitionDelay = `${Math.min(index % 6, 5) * 70}ms`;
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.16,
+    rootMargin: "0px 0px -8% 0px"
+  });
+
+  elements.forEach((element) => observer.observe(element));
+}
+
+function initHeaderState() {
+  const header = document.querySelector(".site-header");
+
+  if (!header) {
+    return;
+  }
+
+  const update = () => {
+    header.classList.toggle("is-scrolled", window.scrollY > 18);
+  };
+
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+}
+
+function initSmoothHashLinks() {
+  const links = document.querySelectorAll('a[href^="#"]');
+
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href");
+
+      if (!targetId || targetId === "#") {
+        return;
+      }
+
+      const target = document.querySelector(targetId);
+
+      if (!target) {
+        return;
+      }
+
+      event.preventDefault();
+
+      const headerOffset = document.querySelector(".site-header")?.offsetHeight || 0;
+      const targetTop = target.getBoundingClientRect().top + window.scrollY - headerOffset - 16;
+
+      window.scrollTo({
+        top: targetTop,
+        behavior: "smooth"
+      });
+    });
+  });
+}
+
+function initCookieBanner() {
+  const storageKey = "viva-polaco-cookie-consent";
+
+  if (localStorage.getItem(storageKey)) {
+    return;
+  }
+
+  const lang = document.documentElement.lang === "es" ? "es" : "pl";
+  const privacyHref = lang === "es" ? "./privacy-policy.html" : "./polityka-prywatnosci.html";
+  const content = lang === "es"
+    ? {
+        text: "Usamos cookies para mejorar la experiencia, analizar el tráfico y recordar preferencias.",
+        link: "Política de privacidad",
+        accept: "Aceptar"
+      }
+    : {
+        text: "Używamy cookies, aby poprawić działanie strony, analizować ruch i zapamiętywać preferencje.",
+        link: "Polityka prywatności",
+        accept: "Akceptuję"
+      };
+
+  const banner = document.createElement("aside");
+  banner.className = "cookie-banner";
+  banner.setAttribute("aria-live", "polite");
+  banner.innerHTML = `
+    <div class="cookie-banner__copy">
+      <strong>Cookies</strong>
+      <p>${content.text} <a href="${privacyHref}">${content.link}</a>.</p>
+    </div>
+    <button class="btn btn-primary cookie-banner__button" type="button">${content.accept}</button>
+  `;
+
+  const acceptButton = banner.querySelector(".cookie-banner__button");
+
+  acceptButton?.addEventListener("click", () => {
+    localStorage.setItem(storageKey, "accepted");
+    banner.classList.add("is-hiding");
+
+    window.setTimeout(() => {
+      banner.remove();
+    }, 260);
+  });
+
+  document.body.appendChild(banner);
 }
