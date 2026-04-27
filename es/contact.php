@@ -42,8 +42,8 @@
       content="https://teatrodeidiomas.pl/hispano-polaco/assets/img/og-viva-polaco.jpg"
     />
     <meta name="theme-color" content="#d85f45" />
-    <link rel="stylesheet" href="/hispano-polaco/assets/css/style.css" />
-    <link rel="icon" type="image/svg+xml" href="/hispano-polaco/assets/img/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -62,7 +62,7 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/hispano-polaco/es/">
+        <a class="brand" href="./">
           <span class="brand-mark">VP</span>
           <span class="brand-copy">
             <strong>Viva Polaco</strong>
@@ -72,13 +72,13 @@
         <input class="nav-toggle" id="nav-toggle" type="checkbox" />
         <label class="nav-toggle-btn" for="nav-toggle" aria-label="Abrir menú"><span></span></label>
         <nav class="nav" aria-label="Navegación principal">
-          <a href="/hispano-polaco/es/">Inicio</a>
-          <a href="/hispano-polaco/es/about.html">Sobre nosotros</a>
-          <a href="/hispano-polaco/es/offer.html">Cursos</a>
-          <a href="/hispano-polaco/es/faq.html">FAQ</a>
-          <a class="active" href="/hispano-polaco/es/contact.php">Contacto</a>
+          <a href="./">Inicio</a>
+          <a href="./about.html">Sobre nosotros</a>
+          <a href="./offer.html">Cursos</a>
+          <a href="./faq.html">FAQ</a>
+          <a class="active" href="./contact.php">Contacto</a>
         </nav>
-        <div class="header-actions"><div class="lang-switch"><a class="active" href="/hispano-polaco/es/contact.php">ES</a><a href="/hispano-polaco/pl/kontakt.php">PL</a></div></div>
+        <div class="header-actions"><div class="lang-switch"><a class="active" href="./contact.php">ES</a><a href="../pl/kontakt.php">PL</a></div></div>
       </div>
     </header>
     <main>
@@ -148,7 +148,7 @@
         </div>
       </section>
     </main>
-    <footer class="site-footer"><div class="container footer-inner"><div><strong>Viva Polaco</strong><div>Escuela online de polaco para hispanohablantes</div></div><div class="footer-links"><a href="/hispano-polaco/es/privacy-policy.html">Privacidad</a><a href="/hispano-polaco/es/offer.html">Cursos</a></div></div></footer>
-    <script src="/hispano-polaco/assets/js/site.js" defer></script>
+    <footer class="site-footer"><div class="container footer-inner"><div><strong>Viva Polaco</strong><div>Escuela online de polaco para hispanohablantes</div></div><div class="footer-links"><a href="./privacy-policy.html">Privacidad</a><a href="./offer.html">Cursos</a></div></div></footer>
+    <script src="../assets/js/site.js" defer></script>
   </body>
 </html>

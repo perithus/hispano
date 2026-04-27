@@ -10,9 +10,9 @@
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="Viva Polaco" />
-    <link rel="canonical" href="https://teatrodeidiomas.pl./kontakt.php" />
-    <link rel="alternate" hreflang="es" href="https://teatrodeidiomas.pl../es/contact.php" />
-    <link rel="alternate" hreflang="pl" href="https://teatrodeidiomas.pl./kontakt.php" />
+    <link rel="canonical" href="https://teatrodeidiomas.pl/hispano-polaco/pl/kontakt.php" />
+    <link rel="alternate" hreflang="es" href="https://teatrodeidiomas.pl/hispano-polaco/es/contact.php" />
+    <link rel="alternate" hreflang="pl" href="https://teatrodeidiomas.pl/hispano-polaco/pl/kontakt.php" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pl_PL" />
     <meta property="og:title" content="Kontakt | Kursy polskiego dla osĂłb hiszpaĹ„skojÄ™zycznych" />
@@ -20,11 +20,11 @@
       property="og:description"
       content="Napisz do Viva Polaco i dobierz najlepszy kurs polskiego dla osoby hiszpaĹ„skojÄ™zycznej."
     />
-    <meta property="og:url" content="https://teatrodeidiomas.pl./kontakt.php" />
+    <meta property="og:url" content="https://teatrodeidiomas.pl/hispano-polaco/pl/kontakt.php" />
     <meta property="og:site_name" content="Viva Polaco" />
     <meta
       property="og:image"
-      content="https://teatrodeidiomas.pl../assets/img/og-viva-polaco.jpg"
+      content="https://teatrodeidiomas.pl/hispano-polaco/assets/img/og-viva-polaco.jpg"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -39,7 +39,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://teatrodeidiomas.pl../assets/img/og-viva-polaco.jpg"
+      content="https://teatrodeidiomas.pl/hispano-polaco/assets/img/og-viva-polaco.jpg"
     />
     <meta name="theme-color" content="#d85f45" />
     <link rel="stylesheet" href="../assets/css/style.css" />
@@ -49,7 +49,7 @@
         "@context": "https://schema.org",
         "@type": "ContactPage",
         "name": "Kontakt Viva Polaco",
-        "url": "https://teatrodeidiomas.pl./kontakt.php",
+        "url": "https://teatrodeidiomas.pl/hispano-polaco/pl/kontakt.php",
         "mainEntity": {
           "@type": "Organization",
           "name": "Viva Polaco",
