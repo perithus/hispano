@@ -411,7 +411,7 @@ main {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 102px 0 86px;
+  padding: 96px 0 72px;
 }
 
 .hero::before,
@@ -442,17 +442,17 @@ main {
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
-  gap: 72px;
+  gap: 56px;
   align-items: start;
 }
 
 .hero-copy h1 {
   margin: 18px 0 18px;
-  max-width: 10ch;
+  max-width: 11ch;
   font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  font-size: clamp(3.2rem, 6vw, 6rem);
-  line-height: 0.92;
-  letter-spacing: -0.04em;
+  font-size: clamp(3rem, 5.2vw, 5.15rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
 }
 
 .hero-copy p {
@@ -505,7 +505,7 @@ main {
 
 .hero-card {
   position: relative;
-  padding: 22px 22px 120px;
+  padding: 20px;
   border-radius: 40px;
   background:
     linear-gradient(180deg, rgba(255, 252, 246, 0.96), rgba(239, 229, 214, 0.9));
@@ -526,7 +526,7 @@ main {
 .hero-photo {
   border-radius: 28px 28px 120px 28px;
   overflow: hidden;
-  aspect-ratio: 0.88;
+  aspect-ratio: 1.08;
   box-shadow: 0 22px 46px rgba(62, 41, 25, 0.16);
 }
 
@@ -626,13 +626,13 @@ main {
 .hero-panel-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 18px;
+  gap: 12px;
+  margin-top: 14px;
 }
 
 .mini-panel {
   min-height: 100%;
-  padding: 18px;
+  padding: 16px;
   border-radius: 22px;
   background: rgba(255, 251, 245, 0.9);
   border: 1px solid rgba(73, 54, 37, 0.12);
@@ -641,9 +641,9 @@ main {
 
 .mini-panel__label {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: var(--primary-dark);
-  font-size: 0.74rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -651,15 +651,15 @@ main {
 
 .mini-panel strong {
   display: block;
-  margin-bottom: 6px;
-  font-size: 1.02rem;
-  line-height: 1.25;
+  margin-bottom: 5px;
+  font-size: 0.96rem;
+  line-height: 1.22;
 }
 
 .mini-panel p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.86rem;
 }
 
 .section {
