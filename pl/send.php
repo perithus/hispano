@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   http_response_code(403);
@@ -31,11 +31,11 @@ if (!$name || !$phone || !$email || !$level) {
 $to = 'teatrocontactwarsaw@gmail.com';
 $subject = 'Nowy kontakt - Viva Polaco #' . date('YmdHis');
 $message = "Nowy kontakt ze strony Viva Polaco:\n\n";
-$message .= "ImiÄ™ i nazwisko: {$name}\n";
+$message .= "Imię i nazwisko: {$name}\n";
 $message .= "Telefon: {$phone}\n";
 $message .= "E-mail: {$email}\n";
 $message .= "Poziom lub cel: {$level}\n\n";
-$message .= "WiadomoĹ›Ä‡:\n" . ($messageNote ?: '- brak -') . "\n";
+$message .= "Wiadomość:\n" . ($messageNote ?: '- brak -') . "\n";
 
 $headers = "From: Viva Polaco <no-reply@teatroidiomas.pl>\r\n";
 $headers .= "Reply-To: {$email}\r\n";

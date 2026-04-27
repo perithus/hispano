@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontakt | Kursy polskiego dla osĂłb hiszpaĹ„skojÄ™zycznych | Viva Polaco</title>
+    <title>Kontakt | Kursy polskiego dla osób hiszpańskojęzycznych | Viva Polaco</title>
     <meta
       name="description"
-      content="Skontaktuj siÄ™ z Viva Polaco i otrzymaj propozycjÄ™ kursu polskiego dopasowanÄ… do Twojego celu: ĹĽycie w Polsce, praca, studia lub egzamin."
+      content="Skontaktuj się z Viva Polaco i otrzymaj propozycję kursu polskiego dopasowaną do Twojego celu: życie w Polsce, praca, studia lub egzamin."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="Viva Polaco" />
@@ -15,10 +15,10 @@
     <link rel="alternate" hreflang="pl" href="https://teatrodeidiomas.pl/hispano-polaco/pl/kontakt.php" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pl_PL" />
-    <meta property="og:title" content="Kontakt | Kursy polskiego dla osĂłb hiszpaĹ„skojÄ™zycznych" />
+    <meta property="og:title" content="Kontakt | Kursy polskiego dla osób hiszpańskojęzycznych" />
     <meta
       property="og:description"
-      content="Napisz do Viva Polaco i dobierz najlepszy kurs polskiego dla osoby hiszpaĹ„skojÄ™zycznej."
+      content="Napisz do Viva Polaco i dobierz najlepszy kurs polskiego dla osoby hiszpańskojęzycznej."
     />
     <meta property="og:url" content="https://teatrodeidiomas.pl/hispano-polaco/pl/kontakt.php" />
     <meta property="og:site_name" content="Viva Polaco" />
@@ -31,11 +31,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Kontakt | Kursy polskiego dla osĂłb hiszpaĹ„skojÄ™zycznych"
+      content="Kontakt | Kursy polskiego dla osób hiszpańskojęzycznych"
     />
     <meta
       name="twitter:description"
-      content="BezpĹ‚atna konsultacja i propozycja kursu polskiego dopasowana do Twojej sytuacji."
+      content="Bezpłatna konsultacja i propozycja kursu polskiego dopasowana do Twojej sytuacji."
     />
     <meta
       name="twitter:image"
@@ -66,12 +66,12 @@
           <span class="brand-mark">VP</span>
           <span class="brand-copy">
             <strong>Viva Polaco</strong>
-            <span>SzkoĹ‚a polskiego dla osĂłb hiszpaĹ„skojÄ™zycznych</span>
+            <span>Szkoła polskiego dla osób hiszpańskojęzycznych</span>
           </span>
         </a>
         <input class="nav-toggle" id="nav-toggle" type="checkbox" />
-        <label class="nav-toggle-btn" for="nav-toggle" aria-label="OtwĂłrz menu"><span></span></label>
-        <nav class="nav" aria-label="GĹ‚Ăłwna nawigacja">
+        <label class="nav-toggle-btn" for="nav-toggle" aria-label="Otwórz menu"><span></span></label>
+        <nav class="nav" aria-label="Główna nawigacja">
           <a href="./">Start</a>
           <a href="./o-nas.html">O nas</a>
           <a href="./oferta.html">Oferta</a>
@@ -91,10 +91,10 @@
         <div class="container contact-grid">
           <article class="contact-card">
             <span class="eyebrow">Kontakt</span>
-            <h1>Napisz do nas, a przygotujemy sensownÄ… Ĺ›cieĹĽkÄ™ nauki.</h1>
+            <h1>Napisz do nas, a przygotujemy sensowną ścieżkę nauki.</h1>
             <p>
-              PomoĹĽemy dobraÄ‡ kurs osobom, ktĂłre przyjeĹĽdĹĽajÄ… do Polski, juĹĽ tu mieszkajÄ…
-              lub potrzebujÄ… polskiego do pracy, studiĂłw albo egzaminu.
+              Pomożemy dobrać kurs osobom, które przyjeżdżają do Polski, już tu mieszkają
+              lub potrzebują polskiego do pracy, studiów albo egzaminu.
             </p>
             <div class="contact-links">
               <a class="contact-link" href="tel:+48576471021"><strong>Telefon</strong><span>+48 576 471 021</span></a>
@@ -108,14 +108,14 @@
           </article>
           <div class="contact-form card">
             <?php if (isset($_GET['sent'])): ?>
-              <div class="form-success">DziÄ™kujemy. OtrzymaliĹ›my wiadomoĹ›Ä‡ i wrĂłcimy z odpowiedziÄ… wkrĂłtce.</div>
+              <div class="form-success">Dziękujemy. Otrzymaliśmy wiadomość i wrócimy z odpowiedzią wkrótce.</div>
             <?php else: ?>
               <form id="contactForm" action="send.php" method="POST" novalidate>
                 <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
                 <input type="hidden" name="form_time" value="<?php echo time(); ?>" />
                 <div class="form-row">
                   <div class="form-group">
-                    <label for="name">ImiÄ™ i nazwisko</label>
+                    <label for="name">Imię i nazwisko</label>
                     <input id="name" name="name" type="text" autocomplete="name" />
                     <small class="error"></small>
                   </div>
@@ -134,7 +134,7 @@
                   <div class="form-group">
                     <label for="level">Poziom lub cel</label>
                     <select id="level" name="level">
-                      <option value="">Wybierz opcjÄ™</option>
+                      <option value="">Wybierz opcję</option>
                       <option>A1 - start od zera</option>
                       <option>A2-B1 - lepsza komunikacja</option>
                       <option>B2-C1 - praca lub studia</option>
@@ -145,11 +145,11 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="message">WiadomoĹ›Ä‡</label>
+                  <label for="message">Wiadomość</label>
                   <textarea id="message" name="message"></textarea>
                   <small class="error"></small>
                 </div>
-                <button class="btn btn-primary" type="submit">WyĹ›lij wiadomoĹ›Ä‡</button>
+                <button class="btn btn-primary" type="submit">Wyślij wiadomość</button>
               </form>
             <?php endif; ?>
           </div>
@@ -160,10 +160,10 @@
       <div class="container footer-inner">
         <div>
           <strong>Viva Polaco</strong>
-          <div>Nowoczesna szkoĹ‚a polskiego dla osĂłb hiszpaĹ„skojÄ™zycznych</div>
+          <div>Nowoczesna szkoła polskiego dla osób hiszpańskojęzycznych</div>
         </div>
         <div class="footer-links">
-          <a href="./polityka-prywatnosci.html">PrywatnoĹ›Ä‡</a>
+          <a href="./polityka-prywatnosci.html">Prywatność</a>
           <a href="./oferta.html">Oferta</a>
         </div>
       </div>
