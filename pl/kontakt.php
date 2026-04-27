@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | Kursy polskiego dla osĂłb hiszpaĹ„skojÄ™zycznych | Viva Polaco</title>
+    <meta
+      name="description"
+      content="Skontaktuj siÄ™ z Viva Polaco i otrzymaj propozycjÄ™ kursu polskiego dopasowanÄ… do Twojego celu: ĹĽycie w Polsce, praca, studia lub egzamin."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Viva Polaco" />
+    <link rel="canonical" href="https://teatrodeidiomas.pl./kontakt.php" />
+    <link rel="alternate" hreflang="es" href="https://teatrodeidiomas.pl../es/contact.php" />
+    <link rel="alternate" hreflang="pl" href="https://teatrodeidiomas.pl./kontakt.php" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:title" content="Kontakt | Kursy polskiego dla osĂłb hiszpaĹ„skojÄ™zycznych" />
+    <meta
+      property="og:description"
+      content="Napisz do Viva Polaco i dobierz najlepszy kurs polskiego dla osoby hiszpaĹ„skojÄ™zycznej."
+    />
+    <meta property="og:url" content="https://teatrodeidiomas.pl./kontakt.php" />
+    <meta property="og:site_name" content="Viva Polaco" />
+    <meta
+      property="og:image"
+      content="https://teatrodeidiomas.pl../assets/img/og-viva-polaco.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Kontakt | Kursy polskiego dla osĂłb hiszpaĹ„skojÄ™zycznych"
+    />
+    <meta
+      name="twitter:description"
+      content="BezpĹ‚atna konsultacja i propozycja kursu polskiego dopasowana do Twojej sytuacji."
+    />
+    <meta
+      name="twitter:image"
+      content="https://teatrodeidiomas.pl../assets/img/og-viva-polaco.jpg"
+    />
+    <meta name="theme-color" content="#d85f45" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Kontakt Viva Polaco",
+        "url": "https://teatrodeidiomas.pl./kontakt.php",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "Viva Polaco",
+          "telephone": "+48 576 471 021",
+          "email": "teatrocontactwarsaw@gmail.com"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./">
+          <span class="brand-mark">VP</span>
+          <span class="brand-copy">
+            <strong>Viva Polaco</strong>
+            <span>SzkoĹ‚a polskiego dla osĂłb hiszpaĹ„skojÄ™zycznych</span>
+          </span>
+        </a>
+        <input class="nav-toggle" id="nav-toggle" type="checkbox" />
+        <label class="nav-toggle-btn" for="nav-toggle" aria-label="OtwĂłrz menu"><span></span></label>
+        <nav class="nav" aria-label="GĹ‚Ăłwna nawigacja">
+          <a href="./">Start</a>
+          <a href="./o-nas.html">O nas</a>
+          <a href="./oferta.html">Oferta</a>
+          <a href="./faq.html">FAQ</a>
+          <a class="active" href="./kontakt.php">Kontakt</a>
+        </nav>
+        <div class="header-actions">
+          <div class="lang-switch">
+            <a href="../es/contact.php">ES</a>
+            <a class="active" href="./kontakt.php">PL</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container contact-grid">
+          <article class="contact-card">
+            <span class="eyebrow">Kontakt</span>
+            <h1>Napisz do nas, a przygotujemy sensownÄ… Ĺ›cieĹĽkÄ™ nauki.</h1>
+            <p>
+              PomoĹĽemy dobraÄ‡ kurs osobom, ktĂłre przyjeĹĽdĹĽajÄ… do Polski, juĹĽ tu mieszkajÄ…
+              lub potrzebujÄ… polskiego do pracy, studiĂłw albo egzaminu.
+            </p>
+            <div class="contact-links">
+              <a class="contact-link" href="tel:+48576471021"><strong>Telefon</strong><span>+48 576 471 021</span></a>
+              <a class="contact-link" href="mailto:teatrocontactwarsaw@gmail.com"><strong>E-mail</strong><span>teatrocontactwarsaw@gmail.com</span></a>
+            </div>
+            <div class="social-row">
+              <a class="social-pill" href="https://wa.me/48576471021" target="_blank" rel="noopener noreferrer">WA</a>
+              <a class="social-pill" href="https://www.instagram.com/teatrodeidiomas/" target="_blank" rel="noopener noreferrer">IG</a>
+              <a class="social-pill" href="https://www.facebook.com/p/Teatro-de-idiomas-61573960503867/" target="_blank" rel="noopener noreferrer">FB</a>
+            </div>
+          </article>
+          <div class="contact-form card">
+            <?php if (isset($_GET['sent'])): ?>
+              <div class="form-success">DziÄ™kujemy. OtrzymaliĹ›my wiadomoĹ›Ä‡ i wrĂłcimy z odpowiedziÄ… wkrĂłtce.</div>
+            <?php else: ?>
+              <form id="contactForm" action="send.php" method="POST" novalidate>
+                <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
+                <input type="hidden" name="form_time" value="<?php echo time(); ?>" />
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">ImiÄ™ i nazwisko</label>
+                    <input id="name" name="name" type="text" autocomplete="name" />
+                    <small class="error"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" autocomplete="email" />
+                    <small class="error"></small>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" />
+                    <small class="error"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="level">Poziom lub cel</label>
+                    <select id="level" name="level">
+                      <option value="">Wybierz opcjÄ™</option>
+                      <option>A1 - start od zera</option>
+                      <option>A2-B1 - lepsza komunikacja</option>
+                      <option>B2-C1 - praca lub studia</option>
+                      <option>Przygotowanie do egzaminu</option>
+                      <option>Jeszcze nie wiem</option>
+                    </select>
+                    <small class="error"></small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">WiadomoĹ›Ä‡</label>
+                  <textarea id="message" name="message"></textarea>
+                  <small class="error"></small>
+                </div>
+                <button class="btn btn-primary" type="submit">WyĹ›lij wiadomoĹ›Ä‡</button>
+              </form>
+            <?php endif; ?>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>Viva Polaco</strong>
+          <div>Nowoczesna szkoĹ‚a polskiego dla osĂłb hiszpaĹ„skojÄ™zycznych</div>
+        </div>
+        <div class="footer-links">
+          <a href="./polityka-prywatnosci.html">PrywatnoĹ›Ä‡</a>
+          <a href="./oferta.html">Oferta</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/js/site.js" defer></script>
+  </body>
+</html>
+
